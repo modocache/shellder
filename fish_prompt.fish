@@ -2,7 +2,7 @@
 #
      set -g theme_display_user yes
 #     set -g theme_hostname never
-#     set -g theme_hostname always
+     set -g theme_hostname always
 #     set -g default_user your_normal_user
 
 
@@ -262,6 +262,10 @@ function fish_reload
   source ~/.config/fish/config.fish
 end
 
+alias llvm-arc "env http_proxy=fwdproxy:8080 env https_proxy=fwdproxy:8080 ~/local/Source/fb/llvm/arcanist/bin/arc"
+
 # Add local Buck to PATH
-set PATH ~/Source/fb/buck/bin $PATH
+# set PATH ~/local/Source/fb/buck/bin $PATH
+# Add LLVM/Clang to PATH
+set PATH ~/local/Source/fb/llvm/install/bin $PATH
 
