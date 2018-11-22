@@ -267,5 +267,5 @@ alias llvm-arc "env http_proxy=fwdproxy:8080 env https_proxy=fwdproxy:8080 ~/loc
 # Add local Buck to PATH
 # set PATH ~/local/Source/fb/buck/bin $PATH
 # Add LLVM/Clang to PATH
-set PATH ~/local/Source/fb/llvm/install/bin $PATH
+# set PATH ~/local/Source/fb/llvm/install/bin $PATH
 
